@@ -40,6 +40,9 @@ setup(name='zchl.shop',
           'plone.app.dexterity',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
+          'collective.autopermission',
+          'plone.app.referenceablebehavior',
+          'plone.app.relationfield',
       ],
       extras_require={
           'test': [
