@@ -25,10 +25,21 @@
  </property>
  <property name="schema"></property>
  <property name="model_source">
-  &lt;model xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-      &lt;schema&gt;
-      &lt;/schema&gt;
-  &lt;/model&gt;</property>
+&lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
+  &lt;schema&gt;
+    &lt;field name="anrede" type="zope.schema.Choice"&gt;
+      &lt;default&gt;Herr&lt;/default&gt;
+      &lt;description/&gt;
+      &lt;title&gt;Anrede&lt;/title&gt;
+      &lt;values&gt;
+        &lt;element&gt;---&lt;/element&gt;
+        &lt;element&gt;Frau&lt;/element&gt;
+        &lt;element&gt;Herr&lt;/element&gt;
+      &lt;/values&gt;
+    &lt;/field&gt;
+  &lt;/schema&gt;
+&lt;/model&gt;
+  </property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
  <alias from="(Default)" to="(dynamic view)"/>
