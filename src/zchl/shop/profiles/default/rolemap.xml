@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Anonymous"/>
+    <role name="Authenticated"/>
+    <role name="Client"/>
+    <role name="Contributor"/>
+    <role name="Editor"/>
+    <role name="Manager"/>
+    <role name="Member"/>
+    <role name="Owner"/>
+    <role name="Reader"/>
+    <role name="Reviewer"/>
+    <role name="Site Administrator"/>
+  </roles>
+  <permissions>
+    <permission name="Allow sendto" acquire="True">
+      <role name="Anonymous"/>
+      <role name="Client"/>
+      <role name="Manager"/>
+      <role name="Member"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="View Groups" acquire="True">
+      <role name="Client"/>
+      <role name="Manager"/>
+      <role name="Member"/>
+      <role name="Owner"/>
+      <role name="Site Administrator"/>
+    </permission>
+  </permissions>
+</rolemap>
+
