@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<object name="client" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="order" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:translate="">Client</property>
- <property name="description" i18n:translate="">Client-Data</property>
+ <property name="title" i18n:translate="">Order</property>
+ <property name="description" i18n:translate="">customer order</property>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
- <property name="factory">client</property>
- <property name="add_view_expr">string:${folder_url}/++add++client</property>
+ <property name="factory">order</property>
+ <property name="add_view_expr">string:${folder_url}/++add++order</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
-  <element value="order"/>
+  <element value="position"/>
  </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">view</property>
@@ -27,19 +27,9 @@
  </property>
  <property name="schema"></property>
  <property name="model_source">
-  &lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-  &lt;schema&gt;
-  &lt;field name="anrede" type="zope.schema.Choice"&gt;
-  &lt;default&gt;Herr&lt;/default&gt;
-  &lt;description/&gt;
-  &lt;title&gt;Anrede&lt;/title&gt;
-  &lt;values&gt;
-  &lt;element&gt;---&lt;/element&gt;
-  &lt;element&gt;Frau&lt;/element&gt;
-  &lt;element&gt;Herr&lt;/element&gt;
-  &lt;/values&gt;
-  &lt;/field&gt;
-  &lt;/schema&gt;
+  &lt;model xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
+      &lt;schema&gt;
+      &lt;/schema&gt;
   &lt;/model&gt;</property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
